@@ -11,7 +11,6 @@ namespace RE {
     }
 
     // [[__attribute_maybe_unused__]] int8_t LINEAR_INCREMENTOR {1};
-
     [[maybe_unused]] int32_t LINEAR_INCREMENTOR {sizeof(char)};
 }
 
