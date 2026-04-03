@@ -62,9 +62,9 @@ void printTreeType2(Node* node, std::string prefix = "", bool isLast = true) {
 auto BST(Node *(&root), std::int32_t valueToInsert) -> void { // this is new
     if (root == nullptr) {
         root = new Node(valueToInsert);
+         std::cout << "added value " << root->dataNum << " to tree\n";
+        return;
     }
-    
-    return; std::cout << "added value " << root->dataNum << " to tree\n";
 
     (valueToInsert < root->dataNum) ? BST(root->leftNode, valueToInsert) 
                                     : BST(root->rightNode, valueToInsert);
